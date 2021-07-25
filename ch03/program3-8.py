@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 from random import uniform
 
 filePath = "F://BaiduNetdiskDownload//OpenCV+TensorFlow//code//dataTest.csv"
@@ -12,9 +12,9 @@ for i in range(200):
     else:
         target.append(0.0 + uniform(-0.3, 0.3))
 dataRow = dataFile.iloc[0:200, 10]
-plt.scatter(dataRow, target, alpha=0.5, s=100)
-plt.xlabel("Attribute")
-plt.ylabel("Target")
-plt.show()
+plot.scatter(dataRow, target, alpha=0.5, s=100)
+plot.xlabel("Attribute")
+plot.ylabel("Target")
+plot.show()
 
 # random.uniform用于生成给定参数范围内的随机数

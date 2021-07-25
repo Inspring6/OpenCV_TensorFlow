@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 
 filePath = "F://BaiduNetdiskDownload//OpenCV+TensorFlow//code//dataTest.csv"
 dataFile = pd.read_csv(filePath, header=None, prefix="V")
@@ -14,6 +14,6 @@ for i in range(5):
     dataFileNormalized.iloc[:, i] = (dataFileNormalized.iloc[:, i] - mean) / sd
 array = dataFileNormalized.values
 matplotlib.pyplot.boxplot(array)
-plt.xlabel("Attribute")
-plt.ylabel("Score")
-plt.show()
+plot.xlabel("Attribute")
+plot.ylabel("Score")
+plot.show()

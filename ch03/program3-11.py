@@ -1,6 +1,6 @@
 from pylab import *
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 
 filePath = "F://BaiduNetdiskDownload//OpenCV+TensorFlow//code//dataTest.csv"
 dataFile = pd.read_csv(filePath, header=None, prefix="V")
@@ -14,6 +14,6 @@ for i in range(nrows):
     lableColor = (dataFile.iloc[i,10]-minRings)/(maxRings-minRings)
     # dataRow.plot(color = plot.cm.RdYlBl(lableColor),alpha = 0.5)
     dataRow.plot(alpha=0.5)
-plt.xlabel("Attribute")
-plt.ylabel("Score")
-plt.show()
+plot.xlabel("Attribute")
+plot.ylabel("Score")
+plot.show()
