@@ -1,9 +1,9 @@
 import tensorflow as tf
 import numpy as np
 
+tf.compat.v1.disable_eager_execution()
 inputX = np.random.rand(100)
 inputY = np.multiply(3, inputX) + 1
-tf.compat.v1.disable_eager_execution()
 x = tf.compat.v1.placeholder("float32")
 weight = tf.Variable(0.25)
 bias = tf.Variable(0.25)
