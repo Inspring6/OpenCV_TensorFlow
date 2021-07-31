@@ -14,7 +14,6 @@ x1 = tf.compat.v1.placeholder(tf.float64, [None, 1])
 y1_ = tf.matmul(x1, weight1) + bias1
 
 # 这里是第二层
-# weight2 = tf.Variable(np.random.rand(4,1))
 weight2 = tf.Variable(np.random.rand(4, 1))
 bias2 = tf.Variable(np.random.rand(inputX.shape[1], 1))
 y2_ = tf.matmul(y1_, weight2) + bias2
