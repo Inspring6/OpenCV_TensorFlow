@@ -18,8 +18,8 @@ ax.plot(xx[0, :], xx[1, :])
 ax.plot(A[0], A[1], 'ko')
 
 ax.plot([C[0], P[0]], [C[1], P[1]], 'r-o')
-# ax.plot([0, C[0][0]], [0, C[1][0]], 'm-o')
-ax.plot([0, C[0]], [0, C[1]], 'm-o')  # C.shape = (2,1),直接调用行会引发警告，实际上没有错误是因为每行只有一个数
+ax.plot([0, C[0][0]], [0, C[1][0]], 'm-o')
+# ax.plot([0, C[0]], [0, C[1]], 'm-o')  # C.shape = (2,1),直接调用行会引发警告，实际上没有错误是因为每行只有一个数
 
 ax.axvline(x=0, color='black')
 ax.axhline(y=0, color='black')

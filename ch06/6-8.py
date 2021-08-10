@@ -1,5 +1,6 @@
 import cv2
 
+
 def on_mouse(event, x, y, flags, param):
     rect_start = (0, 0)
 
@@ -10,7 +11,7 @@ def on_mouse(event, x, y, flags, param):
         cv2.rectangle(img, rect_start, rect_end, (0, 255, 0), 2)
 
 
-img = cv2.imread("lena.jpg")
+img = cv2.imread("../jpg/lena.jpg")
 cv2.namedWindow('test')
 cv2.setMouseCallback("test", on_mouse)
 

@@ -1,7 +1,7 @@
 import cv2
 import random
 
-img = cv2.imread("lena.jpg")
+img = cv2.imread("../jpg/lena.jpg")
 width, height, depth = img.shape
 img_width_box = width * 0.2
 img_height_box = height * 0.2

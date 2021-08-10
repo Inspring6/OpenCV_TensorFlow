@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("lena.jpg")
+img = cv2.imread("../jpg/lena.jpg")
 M_copy_img = np.array([[0, 0.8, -100],
                        [0.8, 0, -12]],
                       dtype=np.float32)

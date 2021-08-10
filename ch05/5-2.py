@@ -7,7 +7,7 @@ import cv2
 # print(img.shape)
 # cv2.waitKey()
 
-img = cv2.imread("2.jpg", cv2.IMREAD_GRAYSCALE)  # 读取灰度图像
-cv2.imwrite("2_1.png",img)
+img = cv2.imread("../jpg/2.jpg", cv2.IMREAD_GRAYSCALE)  # 读取灰度图像
+cv2.imwrite("../jpg/2_1.png", img)
 cv2.imshow("img", img)
 cv2.waitKey()
